@@ -17,8 +17,11 @@ int main(void){
 		x--;
 		fprintf(stdout, "child: post-subtract: %d\n",x);
 	}else{
-		
+	
 		fprintf(stdout, "parent: print in else %d\n",x);
+		x--;
+		
+		fprintf(stdout, "parent: post sub:  print in else %d\n",x);
 	}
 	return 0;
 }
